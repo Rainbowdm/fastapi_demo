@@ -115,3 +115,5 @@ media/
 # !**/migrations
 # !**/migrations/__init__.py
 /log*
+/ch05-a-realistic-api/venv/
+/ch05-a-realistic-api/venv/
