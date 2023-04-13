@@ -117,3 +117,5 @@ media/
 /log*
 /ch05-a-realistic-api/venv/
 /ch05-a-realistic-api/settings.json
+/ch06_error_handling_and_perf/settings.json
+/ch06_error_handling_and_perf/venv/

@@ -8,7 +8,7 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
-setenv VIRTUAL_ENV "/home/dev/pythonProject/fastapi_demo/src/ch05_a_realistic_api/venv"
+setenv VIRTUAL_ENV "/home/dev/pythonProject/fastapi_demo/src/ch06_error_handling_and_perf/venv"
 
 set _OLD_VIRTUAL_PATH="$PATH"
 setenv PATH "$VIRTUAL_ENV/bin:$PATH"

@@ -30,7 +30,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/dev/pythonProject/fastapi_demo/src/ch05_a_realistic_api/venv"
+set -gx VIRTUAL_ENV "/home/dev/pythonProject/fastapi_demo/src/ch06_error_handling_and_perf/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
