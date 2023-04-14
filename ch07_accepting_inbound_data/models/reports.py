@@ -1,12 +1,16 @@
 import datetime
+from typing import Optional
 
 from pydantic import BaseModel
-from typing import Optional
 
 from models.location import Location
 
 
-class Report(BaseModel):
+class ReportSubmittal(BaseModel):
     description: str
     location: Location
-    created_date: Optional[datetime]
+
+
+class Report(ReportSubmittal):
+    id: str
+    created_date: Optional[datetime.datetime]
