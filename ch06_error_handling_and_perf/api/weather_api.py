@@ -18,3 +18,5 @@ async def weather(location: Location = Depends(), units: Optional[str] = 'metric
         return await openweather_service.get_report_async(location.city, location.state, location.country, units)
     except ValidationError as ve:
         return fastapi.Response(content=ve.error_msg, status_code=ve.status_code)
+    except Exception as x:
+        return fastapi.Response(content=str(x), status_code=500)
