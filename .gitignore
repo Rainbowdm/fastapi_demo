@@ -119,3 +119,5 @@ media/
 /ch05-a-realistic-api/settings.json
 /ch06_error_handling_and_perf/settings.json
 /ch06_error_handling_and_perf/venv/
+/ch07_accepting_inbound_data/settings.json
+/ch07_accepting_inbound_data/venv/
