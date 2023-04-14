@@ -7,6 +7,6 @@ from models.location import Location
 
 
 class Report(BaseModel):
-    descripion: str
+    description: str
     location: Location
     created_date: Optional[datetime]
