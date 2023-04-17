@@ -121,3 +121,5 @@ media/
 /ch06_error_handling_and_perf/venv/
 /ch07_accepting_inbound_data/settings.json
 /ch07_accepting_inbound_data/venv/
+/ch08_deployment/settings.json
+/ch08_deployment/venv/
