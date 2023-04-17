@@ -9,7 +9,7 @@ from api import weather_api
 from services import openweather_service
 from views import home
 
-api = fastapi.FastAPI()
+api = fastapi.FastAPI()  # docs_url=None
 
 
 def configure():
