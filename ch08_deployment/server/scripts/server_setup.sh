@@ -5,6 +5,8 @@
 apt update
 apt upgrade -y
 
+# If have problem with nano ~/.zshrc when you add: source /apps/venv/bin/activate
+# Remove: source /apps/venv/bin/activate in file ~/.zshrc
 apt install zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
@@ -20,11 +22,9 @@ ufw allow 80
 ufw allow 443
 ufw enable
 
-
 apt install acl -y
 useradd -M apiuser
 usermod -L apiuser
-
 
 # Web app file structure
 mkdir /apps
@@ -68,7 +68,6 @@ rm /etc/nginx/sites-enabled/default
 cp /apps/fastapi_demo/ch08_deployment/server/nginx/weather.nginx /etc/nginx/sites-enabled/
 update-rc.d nginx enable
 service nginx restart
-
 
 # Optionally add SSL support via Let's Encrypt:
 # https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-18-04
