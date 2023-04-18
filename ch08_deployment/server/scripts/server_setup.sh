@@ -49,11 +49,11 @@ cd /apps
 git clone https://github.com/Rainbowdm/fastapi_demo.git fastapi_demo
 
 # Setup the web app:
-cd /apps/fastapi_demo/ch08-deployment
+cd /apps/fastapi_demo/ch08_deployment
 pip install -r requirements.txt
 
 # Copy and enable the daemon
-cp /apps/fastapi_demo/ch08-deployment/server/units/weather.service /etc/systemd/system/
+cp /apps/fastapi_demo/ch08_deployment/server/units/weather.service /etc/systemd/system/
 
 systemctl start weather
 systemctl status weather
@@ -65,7 +65,7 @@ apt install nginx
 # CAREFUL HERE. If you are using default, maybe skip this
 rm /etc/nginx/sites-enabled/default
 
-cp /apps/fastapi_demo/ch08-deployment/server/nginx/weather.nginx /etc/nginx/sites-enabled/
+cp /apps/fastapi_demo/ch08_deployment/server/nginx/weather.nginx /etc/nginx/sites-enabled/
 update-rc.d nginx enable
 service nginx restart
 

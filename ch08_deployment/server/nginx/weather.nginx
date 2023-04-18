@@ -8,7 +8,7 @@ server {
         gzip            on;
         gzip_buffers    8 256k;
 
-        alias /apps/fastapi_demo/ch08-deployment/static;
+        alias /apps/fastapi_demo/ch08_deployment/static;
         expires 365d;
     }
     location / {
