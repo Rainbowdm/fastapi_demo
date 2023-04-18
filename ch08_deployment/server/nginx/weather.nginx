@@ -1,6 +1,6 @@
 server {
     listen 80;
-    server_name weatherapi.demo.com 104.248.143.30;
+    server_name weatherapi.demo.com 138.197.180.193;
     server_tokens off;
     charset utf-8;
 
